@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body{
+            background-color:#434396;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Parágrafo 1</p>
+
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite um número: "))
+        var n2 =  Number.parseInt(window.prompt("Digite outro número: "))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ` + soma)
+        
+
+        /* Number.parseInt(n) para converter a String em Number Int
+         * Number.parteFloat(n) para converter a String em Num
+         * Number(n) = JS identifica se é Int ou Float
+         * 
+         * Convertendo Number para String
+         * String(n) | n.toString()
+         * 
+         * Formatando Strings 
+         * var n = x
+         * 'Número ${n}'
+         * 
+         * s.length = tamanho da string ( em caracteres )
+         * s.toUpperCase() = String toda em letra maiúscula
+         * s.toLowerCase() = String toda em letra minúscula
+         */
+    </script>
+</body>
+</html>
