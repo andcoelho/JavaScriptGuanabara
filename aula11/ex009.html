@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 009</title>
+</head>
+<body>
+    <p>Digite seu país:</p>
+    <input type="text" id="pais">
+    <input type="button" value="verificar" onclick="verifica()">
+
+    <div id="resultado"></div>
+
+    <script>
+
+        function verifica() {
+            var p = window.document.getElementById('pais').value.toUpperCase();
+            var res = window.document.querySelector('div#resultado');
+
+            if(p == 'BRASIL') {
+                res.innerHTML = `Você nasceu em ${p}, é Brasileiro`;
+            } else {
+                res.innerHTML = `Você nasceu em ${p}, é estrangeiro`;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
